@@ -27,8 +27,8 @@ Foi bastante intuitivo realizar o desafio proposto pelo Frontend Mentor, que con
 
 
 ## Construido com
--Html  
--CCS
+- Html  
+- CCS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
