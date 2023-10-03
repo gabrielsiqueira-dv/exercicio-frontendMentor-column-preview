@@ -1,0 +1,113 @@
+
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    margin: 100px auto;
+    max-width: 950px;
+    
+}
+.container .card{
+    height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 50px;
+
+}
+.container  .sedans{
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left:15px ;
+  
+}
+.container .suvs{
+    background-color: var(--Dark-cyan);
+    padding-left:15px ;
+
+}
+.container .luxury{
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left:15px ;
+}
+.container i img{
+height: 40px;
+width: 64px;
+}
+.container .modelo{
+    font-size: 4.0rem;
+    color: var(--Very-light-gray);
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.container .informacao{
+   color: var(--Transparent-white-paragraphs);
+   opacity: 0.8;
+   padding-left: 10px;
+   font-weight: 400;
+   line-height: 22px;
+}
+
+.container .button{
+    align-items: center;
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 25px;
+    justify-content: center;
+    width: 145px;
+    height: 50px;
+    transition: 0.2s ease;
+    margin-left: 20px;
+    
+}   
+.sedans .button a{
+   color: var(--Bright-orange);
+   transition: 0.2s ease;
+   cursor: pointer;
+}
+.suvs .button a{
+    color: var(--Dark-cyan);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.luxury .button a{
+    color: var(--Very-dark-cyan);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.sedans .button:hover{
+    background-color:var(--Bright-orange)
+ }
+ .suvs .button:hover{
+    background-color: var(--Dark-cyan);
+ }
+ .luxury .button:hover{
+   background-color:  var(--Very-dark-cyan);
+ }
+ .sedans .button a:hover{
+    color: var(--Very-light-gray);
+ }
+ .suvs .button a:hover{
+    color: var(--Very-light-gray);
+ }
+ .luxury .button a:hover{
+     color: var(--Very-light-gray);
+ }
+ 
+
+
+@media(min-width:300px) and (max-width:760px){
+    .container {
+       grid-template-columns: repeat(1,3fr);
+       margin-top: 0;
+     margin: 20px;
+        
+        max-height: 200px;
+    }
+  
+}
